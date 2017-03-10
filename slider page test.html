@@ -1,0 +1,498 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Carston's Attempt at cr website</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        /* slider attributes */
+        .mySlides {display:none}
+        .w3-left, .w3-right, .w3-badge {cursor:pointer}
+        .w3-badge {height:13px;width:13px;padding:0}
+        
+        
+        
+        /* CSS footer */
+        footer.footerblack {
+            background-color: black;
+        }
+
+        div.MoveToRightaLittle {
+            margin-right: 200px;
+        }
+
+        div.marginPadding {
+            margin-left: 20px;
+        }
+
+
+        /*Overall style page for the whole desgin*/
+        body, h1, h2, h3, h4, h5, h6 {
+            font-family: "Lato", sans-serif;
+        }
+
+        body, html {
+            height: 100%;
+            color: #777;
+            line-height: 1.8;
+        }
+
+        /* Create a Parallax Effect */
+        .bgimg-1, .bgimg-2, .bgimg-3, .bgimg-4, bgimg-5 {
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        /* First image (Logo. Full height) */
+        .bgimg-1 {
+            background-image: url('crs bg picture.png');
+            min-height: 100%;
+        }
+
+        /* Second image (Portfolio) */
+        .bgimg-2 {
+            background-image: url("people-woman-coffee-meeting.jpg");
+            min-height: 400px;
+        }
+
+        /* Third image (Contact) */
+        .bgimg-3 {
+            background-image: url("keyboard-computer-keys-white.jpg");
+            min-height: 400px;
+        }
+
+
+        /* 4th image (Contact) */
+        .bgimg-4 {
+            background-image: url("keyboard-computer-keys-white.jpg");
+            min-height: 400px;
+        }
+
+
+
+
+        /* 5th image (Contact) */
+        .bgimg-5 {
+            background-image: url("keyboard-computer-keys-white.jpg");
+            min-height: 400px;
+        }
+
+
+        .w3-wide {
+            letter-spacing: 10px;
+        }
+
+        .w3-hover-opacity {
+            cursor: pointer;
+    </style>
+
+</head>
+<body>
+
+    <!-- Top Navigation -->
+    <!-- Navbar (sit on top) -->
+    <div class="w3-top">
+        <ul class="w3-navbar" id="myNavbar">
+            <li class="w3-hide-medium w3-hide-large w3-opennav w3-right">
+                <a class="w3-hover-black" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+                    <i class="fa fa-bars"></i>
+                </a>
+            </li>
+            <li class="w3-left-align"><a href="#Home">HOME</a></li>
+            <li class="w3-hide-small"><a href="#clients"><i class="fa fa-user"></i> CLIENTS</a></li>
+            <li class="w3-hide-small"><a href="#About Us"><i class="fa fa-th"></i> ABOUT US</a></li>
+            <li class="w3-hide-small"><a href="#Services"><i class="fa fa-envelope"></i> SERVICES</a></li>
+            <li class="w3-hide-small"><a href="#CONTACT US"><i class="fa fa-envelope"></i> CONTACT US</a></li>
+            <li class="w3-hide-small w3-right">
+                <a href="#" class="w3-hover-blue">
+                    <i class="fa fa-search"></i>
+                </a>
+            </li>
+        </ul>
+
+        <!-- Navbar on small screens -->
+        <div id="navDemo" class="w3-hide w3-hide-large w3-hide-medium">
+            <ul class="w3-navbar w3-left-align w3-white">
+                <li><a href="#ABOUT" onclick="toggleFunction()">ABOUT</a></li>
+                <li><a href="#CLIENTS" onclick="toggleFunction()">CLIENTS</a></li>
+                <li><a href="#SERVICES" onclick="toggleFunction()">SERVICES</a></li>
+                <li><a href="#CONTACT US" onclick="toggleFunction()">CONTACTUS</a></li>
+                <li><a href="#">SEARCH</a></li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- slider class-->
+    <div class="w3-content w3-display-container" style="max-width:800px">
+        <img class="bgimg-1 mySlides w3-container w3-opacity-min" id="home " src="keyboard-computer-keys-white.jpg" style="width:100%">
+        <img class="mySlides" src="people-woman-coffee-meeting.jpg" style="width:100%">
+        <img class="mySlides" src="crs bg picture.png" style="width:100%">
+        <div class="w3-center w3-section w3-large w3-text-white w3-display-bottommiddle" style="width:100%">
+            <div class="w3-left w3-padding-left w3-hover-text-khaki" onclick="plusDivs(-1)">&#10094;</div>
+            <div class="w3-right w3-padding-right w3-hover-text-khaki" onclick="plusDivs(1)">&#10095;</div>
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(1)"></span>
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(2)"></span>
+            <span class="w3-badge demo w3-border w3-transparent w3-hover-white" onclick="currentDiv(3)"></span>
+        </div>  
+    </div> 
+
+    <script>
+var slideIndex = 1;
+showDivs(slideIndex);
+
+function plusDivs(n) {
+  showDivs(slideIndex += n);
+}
+
+function currentDiv(n) {
+  showDivs(slideIndex = n);
+}
+
+function showDivs(n)  {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("demo");
+  if (n > x.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = x.length}
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+     dots[i].className = dots[i].className.replace(" w3-white", "");
+  }
+  x[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " w3-white";
+}
+    </script>
+      
+    <!-- First Parallax Image with Logo Text 
+    <div class="bgimg-1 w3-container w3-opacity-min" id="home">
+        <div class="w3-display-middle" style="white-space:nowrap;">
+            <span class="w3-center w3-padding-xlarge w3-black w3-xlarge w3-wide w3-animate-opacity">MY <span class="w3-hide-small">WEBSITE</span> LOGO</span>
+        </div>
+    </div>  -->
+
+    <!-- Container (About Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="about">
+        <h3 class="w3-center">ABOUT US</h3>
+        <p class="w3-center"><em>"Providing the means to make retail systems more effective and effective"</em></p>
+        <p>
+            In today's rapidly evolving retail landscape, it's not enough to stay the course. To be successful you must adapt and change with the times. At Cybernetic Retail, we provide experience and expertise across all aspects of the retail environment, from conducting strategic assessments, to providing sustainable optimization plans and implementing new technologies to grow your business.
+            Our dedicated consultants will help:
+            Provide Winning Solutions
+            We design and execute winning solutions that lead the way in the retail marketplace.
+            Professional Mentoring
+            We provide long term features and functionality, and guide our customers to become experts in new technologies.
+            Deep Understanding of the Retail Marketplace
+            Our retail industry experience provides a wealth of knowledge and accountability in creating retail solutions.
+            Innovation and Sustainable Strategies
+            By staying up to date with the latest technologies and platforms we’re able to help our clients choose the right systems for the future of their business.
+        </p>
+
+        <p>
+            Our consulting expertise is focused on combining proven strategies with expert knowledge to provide a complete solution for your retail chain. By developing insightful relationships between retailers and consumers, we provide solutions that can be applied to our client's needs.
+
+            We offer a valuable and unique external perspective to both emerging and established retail businesses through expertise in business models, cost structures, and resource capabilities and requirements.
+
+            Our solutions have been applied across all retail IT solution segments to all channels of retailing; including stores, cross-channel systems and e-commerce platforms. By partnering with our clients, we strive to transfer our retailing knowledge to the clients to ensure successful execution and on-going performance improvements.
+
+
+
+        </p>
+    </div>
+
+
+
+
+
+    <div class="w3-row w3-center w3-blue w3-padding-16">
+        <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">14+</span><br>
+            Partners
+        </div>
+        <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">55+</span><br>
+            Projects Done
+        </div>
+        <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">89+</span><br>
+            Happy Clients
+        </div>
+        <div class="w3-quarter w3-section">
+            <span class="w3-xlarge">150+</span><br>
+            Meetings
+        </div>
+
+
+    </div>
+
+
+
+
+
+    <!-- Second Parallax Image with Portfolio Text -->
+    <div class="bgimg-2 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-black w3-wide"> CLIENTS</span>
+        </div>
+    </div>
+
+    <!-- Container (Portfolio Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="portfolio">
+        <h3 class="w3-center">OUR WORK</h3>
+        <p class="w3-center"><em>Here are some of my latest lorem work ipsum tipsum.<br> Click on the images to make them bigger</em></p><br>
+
+
+        <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+        <div class="w3-row-padding w3-center">
+            <div class="w3-col m3">
+                <img src="Under_Armour_Logo_01.png" style="width:50%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist over the mountains">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="BCBG maxazria.jpg" style="width:50%" onclick="onClick(this)" class="w3-hover-opacity" alt="Coffee beans">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="boot barn logo.jpg" style="width:50%" onclick="onClick(this)" class="w3-hover-opacity" alt="Bear closeup">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="dtlr.jpg" style="width:50%" onclick="onClick(this)" class="w3-hover-opacity" alt="Quiet ocean">
+            </div>
+        </div>
+
+        <div class="w3-row-padding w3-center w3-section">
+            <div class="w3-col m3">
+                <img src="Hot Topic Logo.jpg" style="width:50%" onclick="onClick(this)" class="w3-hover-opacity" alt="The mist">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="paper store logo.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="My beloved typewriter">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="The Fragrance Outlet.jpg" style="width:50%" onclick="onClick(this)" class="w3-hover-opacity" alt="Empty ghost train">
+            </div>
+
+            <div class="w3-col m3">
+                <img src="/w3images/p8.jpg" style="width:75%" onclick="onClick(this)" class="w3-hover-opacity" alt="Sailing">
+            </div>
+            <button class="w3-btn w3-light-grey w3-padding-xlarge" style="margin-top:64px">LOAD MORE</button>
+        </div>
+    </div>
+
+
+
+    <!-- Modal for full size images on click-->
+    <div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+        <span class="w3-closebtn w3-text-white w3-opacity w3-hover-opacity-off w3-xxlarge w3-container w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+        <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+            <img id="img01" class="w3-image">
+            <p id="caption" class="w3-opacity w3-large"></p>
+        </div>
+    </div>
+
+
+
+
+    <!-- Third Parallax Image with Portfolio Text -->
+    <div class="bgimg-3 w3-display-container w3-opacity-min">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-light-grey w3-wide">SERVICES</span>
+        </div>
+    </div>
+
+    <!-- Container (Contact Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="contact">
+        <h3 class="w3-center">SERVICES WE OFFER </h3>
+        <p class="w3-center"><em>I'd love your feedback!</em></p>
+
+        <p>
+            While the fundamental dynamics of retail have not changed, retailers face challenges from constantly evolving processes to increased expectations from consumers.
+            Cybernetic Retail consultants bring key business, operations, and IT expertise to the table to help companies make the best decisions possible about the future of their company.
+            Our goals have always been to create the perfect solutions for efficiency, profit, employee satisfaction, and customer satisfaction.
+            We help your company achieve this by offering a wide range of services in the retail marketplace.
+        </p>
+
+    </div>
+
+    <!-- text for channel  -->
+    <div class="w3-left-align w3-row-padding  ">
+        <h1 style="align-content:center"> <b> Omni Channel Platforms</b> </h1>
+        <p>
+            <img src="pexels-photo-25641.jpg " float:right align="right" style="width:400px;" />
+            Omni-channel retailers provide consumers the ability to experience an entire brand, not just a segment of a brand. By utilizing brick and mortar stores as extensions of your service offering, customers can research their purchases through other channels allowing consumers the ability to tailor their shopping experience for themselves. Omni-channel retailing is made more efficient through directed marketing campaigns designed to a consumer's sensibilities.
+            Omni-channel platforms combine a mixture of physical and digital channels, transforming historical multichannel systems into a more innovative and unified customer experience.
+
+            The emergence of the omni-channel shopper requires retailers to deliver a truly positive "commerce anywhere" experience by ensuring content seamlessly flows across all channels with ease and consistency.
+        </p>
+    </div>
+
+
+    <!-- text for channel  -->
+
+    <div class="w3-padding-64 w3-row-padding ">
+        <h1 style="align-content:center"> <b>E-commerce Solutions </b> </h1>
+
+
+        <p>
+            <img class="imgPicturePadding" src="pexels-photo-25641.jpg " float:left align="left" style="width:450px ;" />
+            Today's retailers need to plan not only for their brick and mortar stores, but they must also have an exceptional e-commerce platform to engage their customers.
+            Retail e-commerce sites are a vital method of getting more value from brick and mortar stores, chain inventory, and ongoing customer loyalty.
+            Select the right platform to suit your needs, from multi-channel interaction, to marketing and branding design, is crucial in providing customers an integrated and attractive online shopping experience.
+            Cybernetic Retail can assist you in the design, integration and implementation of an e-commerce site that is flexible, fast and consistent.
+        </p>
+    </div>
+
+    <!-- paragraph 3  -->
+    <div class="w3-left-align w3-row-padding  ">
+        <h1 style="align-content:center"> <b>WareHouse Management</b> </h1>
+        <p>
+            <img src="pexels-photo-25641.jpg " float:right align="right" style="width:400px;" />
+            Omni-channel retailers provide consumers the ability to experience an entire brand, not just a segment of a brand. By utilizing brick and mortar stores as extensions of your service offering, customers can research their purchases through other channels allowing consumers the ability to tailor their shopping experience for themselves.
+            Omni-channel retailing is made more efficient through directed marketing campaigns designed to a consumer's sensibilities.
+            Omni-channel platforms combine a mixture of physical and digital channels, transforming historical multichannel systems into a more innovative and unified customer experience.
+
+            The emergence of the omni-channel shopper requires retailers to deliver a truly positive "commerce anywhere" experience by ensuring content seamlessly flows across all channels with ease and consistency.
+        </p>
+    </div>
+
+    <!-- text for channel  -->
+
+    <div class="w3-padding-64 w3-row-padding ">
+        <h1 style="align-content:center"> <b>Business Analysis & Reporting Solutions</b> </h1>
+
+
+        <p>
+            <img class="imgPicturePadding" src="pexels-photo-25641.jpg " float:left align="left" style="width:450px ;" />
+            We draw upon our extensive retail experience to help develop and review strategic business recommendations. By looking at external and internal factors, market dynamics, and performance across all levels of your business, Cybernetic Retail is able to provide just the information you need to strengthen and improve your presence in the retail marketplace.
+            The challenge in today's industry isn't lack of data, it's too much data. We help by identifying your company’s strengths, weaknesses and key opportunities and presenting the data in a useful and actionable format. Our goal is to work with our clients to ensure they have the most meaningful information available to assist in managing their company's future.
+        </p>
+    </div>
+
+
+    <!-- paragraph 3  -->
+    <div class="w3-left-align w3-row-padding  ">
+        <h1 style="align-content:center"> <b>Allocation & Replenishment Services </b> </h1>
+        <p>
+            <img src="pexels-photo-25641.jpg " float:right align="right" style="width:400px;" />
+            In a market where retailers are compelled to adjust mid-stream to ensure product availability, efficient A&R allows retailers to adapt to changes across retail environments or store performances.
+            A powerful allocation and replenishment solution allows companies to react to trends in the marketplace, while maintaining the ability to manage inventory on an ongoing basis without disruption to the rest of your chain. 
+            The Cybernetic Retail Allocation & Replenishment options support clients in defining A&R strategies, develop successful inventory methodologies and build optimized long-term solutions throughout your chain.
+            Optimized allocations result in achieving the financial targets and profitability goals set by the retail organization from a strategic standpoint.
+            React to trends in the marketplace
+            Adapt to changes in retail environments or store performances
+            Help your business with both pre-distribution and post distribution
+            Consider vendor to store and vendor to warehouse situations
+            Replenishment is an ongoing activity for basic merchandise that is sold year round.
+        </p>
+    </div>
+
+
+
+
+
+
+
+
+    <!--<div class="w3-col m6 w3-hide-small w3-padding-large"> -->
+    <!--<p>
+            Welcome to my website. I am lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure
+            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor
+            incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+            <img src="pexels-photo-25641.jpg " float:right align="right" style="width:500px;" />
+        </p>
+
+
+
+
+
+        <!--4th Parallax Image with Logo Text -->
+    <div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+        <div class="w3-display-middle">
+            <span class="w3-xxlarge w3-text-black w3-wide"> CONTACT US</span>
+        </div>
+
+    </div>
+
+
+
+
+
+    <!-- Container (Contact Section) -->
+    <div class="w3-content w3-container w3-padding-64" id="contact">
+        <h3 class="w3-center">WHERE I WORK</h3>
+        <p class="w3-center"><em>I'd love your feedback!</em></p>
+
+
+
+
+        <!-- STUFF FOR CONTENT IN PARAGRAPH-->
+        <div class="w3-col m8 w3-container w3-section w3-center   ">
+            <div class="w3-margin-bottom ">
+                <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right "></i> Chicago, US<br>
+                <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: +00 151515<br>
+                <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: mail@mail.com<br>
+            </div>
+
+            <div class="w3-row w3-padding-32 w3-section">
+
+
+                <!--Message box-->
+                <p>Swing by for a cup of <i class="fa fa-coffee"></i>, or leave me a note:</p>
+                <form action="form.asp" target="_blank">
+                    <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="Name" required name="Name">
+                        </div>
+                        <div class="w3-half">
+                            <input class="w3-input w3-border" type="text" placeholder="Email" required name="Email">
+                        </div>
+                    </div>
+                    <input class="w3-input w3-border" type="text" placeholder="Message" required name="Message">
+
+                    <button class="w3-btn w3-black w3-right w3-padding w3-section" type="submit">
+                        <i class="fa fa-paper-plane"></i> SEND MESSAGE
+                    </button>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+
+    <footer class="w3-container w3-padding-32 w3-center footerblack ">
+        <div style="position:relative;bottom:100px;z-index:1;" class="w3-tooltip w3-right">
+            <span class="w3-text w3-padding w3-black w3-hide-small">Go To Top</span>
+
+        </div>
+    </footer>
+
+
+    <!-- div class="footer"-->
+    <!-- <!-- Footer
+    <footer class="w3-container w3-padding-32 w3-center ">
+
+
+
+        <p> CYBERNETIC RETAIL <a href="https://www.w3schools.com/w3css/default.asp" </a></p>
+
+
+
+        </div>
+    </footer> -->
+
+
+
+
+
+</body>
+</html>
