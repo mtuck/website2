@@ -1,0 +1,85 @@
+body nav{
+    font-weight: 700;
+
+}
+
+.jumbotron{
+    height: 100vh;
+    top: 0;
+    margin-bottom: 2em;
+    width: 100vw;
+    z-index: -1;
+    background: url('https://files.slack.com/files-pri/T0PQCPGBX-F4HFXS116/cyber_bg_img_3_with_new_idea_4.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center{
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     flex-direction: column;
+     flex-wrap: wrap;
+
+
+ }
+.center2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 100%;
+    color: white;
+
+}
+
+.black{
+    color: black !important;
+}
+
+
+.parallax {
+    /* The image used */
+
+    /* Set a specific height */
+    height: 500px;
+
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-bottom: 4em;
+
+}
+
+.p1{
+    background-image: url("https://files.slack.com/files-tmb/T0PQCPGBX-F4CR5999N-e18afe4707/pexels-photo-325229_720.jpg");
+}
+
+.p2{
+    background-image: url("https://files.slack.com/files-pri/T0PQCPGBX-F4E6Z2Q2J/pexels-photo-325229.jpeg");
+}
+
+.p3{
+    background-image:  url("https://files.slack.com/files-pri/T0PQCPGBX-F4DGB6HV0/pexels-photo-87322.jpeg");
+}
+.p4{
+    background-image: url("https://files.slack.com/files-pri/T0PQCPGBX-F4E6XQBJA/pexels-photo-27665.jpg");
+}
+.p5{
+    background-image: url("https://files.slack.com/files-pri/T0PQCPGBX-F4E78G155/pexels-photo.jpg");
+}
+
+.center br{
+    width: 100vw;
+}
+
+
+
