@@ -108,4 +108,7 @@ h2{
     color:#2196F3;
 }
 
+.no-m a:hover{
+    cursor: pointer; cursor: hand;
+}
 
