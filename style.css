@@ -44,11 +44,29 @@ body nav{
 }
 
 
+h3{
+    margin-top: 4em;
+    margin-bottom: 1em;
+}
+
+h2{
+    margin-bottom: 1em;
+}
+
+.section > .center {
+    margin-bottom: 4em;
+}
+.section{
+    min-height: 400px;
+    margin-bottom: 4em;
+}
+
+
 .parallax {
     /* The image used */
 
     /* Set a specific height */
-    height: 500px;
+    height: 300px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -81,5 +99,13 @@ body nav{
     width: 100vw;
 }
 
+
+.col-2 .fa{
+    color: #2196F3;
+}
+
+.blue{
+    color:#2196F3;
+}
 
 
