@@ -9,7 +9,7 @@ body nav{
     margin-bottom: 2em;
     width: 100vw;
     z-index: -1;
-    background: url('https://files.slack.com/files-pri/T0PQCPGBX-F4HFXS116/cyber_bg_img_3_with_new_idea_4.jpg') no-repeat center center fixed;
+    background: url('img/jumbotron.jpg') no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -60,21 +60,21 @@ body nav{
 }
 
 .p1{
-    background-image: url("https://files.slack.com/files-tmb/T0PQCPGBX-F4CR5999N-e18afe4707/pexels-photo-325229_720.jpg");
+    background-image: url(img/p1.jpeg);
 }
 
 .p2{
-    background-image: url("https://files.slack.com/files-pri/T0PQCPGBX-F4E6Z2Q2J/pexels-photo-325229.jpeg");
+    background-image: url(img/p2.jpg);
 }
 
 .p3{
-    background-image:  url("https://files.slack.com/files-pri/T0PQCPGBX-F4DGB6HV0/pexels-photo-87322.jpeg");
+    background-image:  url(img/p3.jpg);
 }
 .p4{
-    background-image: url("https://files.slack.com/files-pri/T0PQCPGBX-F4E6XQBJA/pexels-photo-27665.jpg");
+
 }
 .p5{
-    background-image: url("https://files.slack.com/files-pri/T0PQCPGBX-F4E78G155/pexels-photo.jpg");
+
 }
 
 .center br{
