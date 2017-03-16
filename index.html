@@ -11,9 +11,9 @@
 </head>
 <body class="scroll-area" data-spy="scroll">
 <div>
-<nav class="navbar fixed-top navbar-toggleable-md navbar-dark navbar-inverse bg-faded " style="background-color: #2196F3">
-    <button class="navbar-toggler navbar-toggler-right " type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
+<nav class="navbar fixed-top navbar-toggleable-md navbar-dark navbar-inverse bg-faded " style="background-color: #2196F3;">
+    <button class="navbar-toggler navbar-toggler-right blue-bg" type="button" style=" margin-top: 1em" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span style="color: yellow" class="navbar-toggler-icon"></span>
     </button>
 
 
@@ -64,22 +64,22 @@ container section" id="about">
     <div class="no-m">
     <h2 class='center'>Our Team</h2>
     <div class="center2 black" style="margin-bottom: 2em">
-        <div class="col-3 center">
+        <div class="col-6 col-md-3 center">
     <a   data-toggle="tooltip" data-html="true" title="Tim founded Cybernetic Retail Solutions in 1984.  Tim also served as CIO at fashion retailer Metropark USA from 2004 to 2010.">
         TIM DELASANTOS&nbsp; &nbsp;<i class="fa fa-info fa-lg"></i>
     </a>
         </div>
-        <div class="col-3 center">
+        <div class="col-6 col-md-3 center">
     <a   data-toggle="tooltip" data-html="true" title="Lindsey is an experienced developer, business and systems analyst, and PMI certified Project Manager.  Lindsey specializes in new system implementations, system integration, and custom solution creation.">
         LINDSEY STEPHENS&nbsp; &nbsp;<i class="fa fa-info fa-lg"></i>
     </a>
         </div>
-        <div class="col-3 center">
+        <div class="col-6 col-md-3 center">
     <a   data-toggle="tooltip" data-html="true" title="Rick Ito has spent his career in retail IT.  He most recently served as the Retail Systems Director at BCBG.">
         RICK ITO&nbsp; &nbsp;<i class="fa fa-info fa-lg"></i>
     </a>
         </div>
-        <div class="col-3 center">
+        <div class="col-6 col-md-6 center">
     <a   data-toggle="tooltip" data-html="true" title="Rick Hicks has used his Finance expertise at various retailers serving as Director, Controller, VP, and CFO.">
         RICK HICKS &nbsp; &nbsp;<i class="fa fa-info fa-lg"></i>
     </a>
@@ -103,19 +103,19 @@ container section" id="about">
         <small><em>Here are some of the companies we work with</em></small>
     </div>
     <div class="row">
-        <div class="col-md-2"><img src="img/svg/dtlr.svg" class="img-fluid"> </div>
-        <div class="col-md-2"> <img src="img/svg/under_armour_logo_108x108.svg" class=" img-fluid"></div>
-        <div class="col-md-2"><img src="img/svg/logo_tps2_108x108.svg" class="img-fluid "> </div>
-        <div class="col-md-2"><img src="img/svg/logo_david_yurman_108x108.svg" class="img-fluid "> </div>
-        <div class="col-md-2"><img src="img/svg/logo_boot_barn_108x108.svg" class="img-fluid "> </div>
-        <div class="col-md-2"><img src="img/svg/wss.jpg" class="img-fluid "> </div>
+        <div class="col-6 col-md-2"><img src="img/svg/dtlr.svg" class="img-fluid"> </div>
+        <div class="col-6 col-md-2"> <img src="img/svg/under_armour_logo_108x108.svg" class=" img-fluid"></div>
+        <div class="col-6 col-md-2"><img src="img/svg/logo_tps2_108x108.svg" class="img-fluid "> </div>
+        <div class="col-6 col-md-2"><img src="img/svg/logo_david_yurman_108x108.svg" class="img-fluid "> </div>
+        <div class="col-6 col-md-2"><img src="img/svg/logo_boot_barn_108x108.svg" class="img-fluid "> </div>
+        <div class="col-6 col-md-2"><img src="img/svg/wss.jpg" class="img-fluid "> </div>
     </div>
 </div>
 
 <div class="container-fluid parallax p1"><div class="center2"><h1>SERVICES</h1></div> </div>
 <div class="container section" id="services">
     <div class="center">
-        <h1 class="center ">SERVICES WE OFFER</h1>
+        <h1 class="center " style="text-align: center">SERVICES WE OFFER</h1>
         <small><em>We'd love to help your company!</em></small>
     </div>
     <br/>
@@ -207,6 +207,19 @@ $(function () {
     date = new Date();
     date = date.getFullYear();
     $('#date').html('&copy; '+ date+ ' Cybernetic Retail, Inc.');
+
+
+    $('.navbar-toggler').click(function () {
+        $('.navbar-toggler').toggleClass( "blue-bg" );
+        $('.navbar-toggler').toggleClass( "trans-bg" );
+    })
+
+    $('.nav-link').click(function () {
+        $('.navbar-toggler').removeClass( "trans-bg" );
+        $('.navbar-toggler').addClass( "blue-bg" );
+        $('.navbar-collapse').addClass( "collapse" );
+        $('.navbar-collapse').removeClass( "show" );
+    })
 
 </script>
 </body>

@@ -19,6 +19,19 @@ body nav{
     justify-content: center;
 }
 
+.trans-bg{
+    background-color: black;
+    color: #2196F3 !important;
+}
+
+.trans-bg span{
+    color: #2196F3 !important;
+}
+
+.blue-bg{
+    background-color: #2196F3 !important;
+}
+
 .center{
      display: flex;
      align-items: center;
