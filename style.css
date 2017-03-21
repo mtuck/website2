@@ -3,13 +3,47 @@ body nav{
 
 }
 
+
 .jumbotron{
-    height: 100vh;
-    top: 0;
+    height: 80vh;
+
+    margin-bottom: 2em;
+
+    z-index: +22;
+    background: url('img/header_lg.png') no-repeat center center fixed;
+    -webkit-background-size: auto;
+    -moz-background-size: auto;
+    -o-background-size: auto;
+    background-size: auto;
+    margin-top: 1em ;
+    margin-bottom: 2em !important;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+
+}
+
+
+@media(max-width:985px){
+  .jumbotron{
+      background: url('img/header_xs.png') no-repeat center center fixed;
+      background-size: contain;
+      
+  }
+}
+
+.jumbotron2{
+    height: 80vh !important;
+    position: absolute;
     margin-bottom: 2em;
     width: 100vw;
-    z-index: -1;
-    background: url('img/jumbotron.jpg') no-repeat center center fixed;
+    z-index: -10;
+    background: #ffffff; /* Old browsers */
+    background: -moz-radial-gradient(center, ellipse cover, #ffffff 46%, #ffffff 46%, #2196f3 100%); /* FF3.6-15 */
+    background: -webkit-radial-gradient(center, ellipse cover, #ffffff 46%,#ffffff 46%,#2196f3 100%); /* Chrome10-25,Safari5.1-6 */
+    background: radial-gradient(ellipse at center, #ffffff 46%,#ffffff 46%,#2196f3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#2196f3',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -21,8 +55,9 @@ body nav{
 
 .trans-bg{
     background-color: black;
-    color: #2196F3 !important;
 }
+
+
 
 .trans-bg span{
     color: #2196F3 !important;
