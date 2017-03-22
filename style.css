@@ -103,6 +103,7 @@ h2{
 
 .section > .center {
     margin-bottom: 4em;
+    padding-top: 3em;
 }
 .section{
     min-height: 400px;
