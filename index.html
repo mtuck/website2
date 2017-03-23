@@ -72,22 +72,22 @@ container section" id="about">
     <div class="no-m">
     <h2 class='center'>Our Team</h2>
     <div class="center2 black" style="margin-bottom: 2em">
-        <div class="col-6 col-md-3 ">
+        <div class="col-6 col-md-3 member">
     <a   data-toggle="tooltip" data-html="true" title="Tim founded Cybernetic Retail Solutions in 1984.  Tim also served as CIO at fashion retailer Metropark USA from 2004 to 2010.">
         TIM DELASANTOS&nbsp; &nbsp;<i class="fa fa-info fa-lg"></i>
     </a>
         </div>
-        <div class="col-6 col-md-3 ">
+        <div class="col-6 col-md-3 member">
     <a   data-toggle="tooltip" data-html="true" title="Lindsey is an experienced developer, business and systems analyst, and PMI certified Project Manager.  Lindsey specializes in new system implementations, system integration, and custom solution creation.">
         LINDSEY STEPHENS&nbsp; &nbsp;<i class="fa fa-info fa-lg"></i>
     </a>
         </div>
-        <div class="col-6 col-md-3 ">
+        <div class="col-6 col-md-3 member">
     <a   data-toggle="tooltip" data-html="true" title="Rick Ito has spent his career in retail IT.  He most recently served as the Retail Systems Director at BCBG.">
         RICK ITO&nbsp; &nbsp;<i class="fa fa-info fa-lg"></i>
     </a>
         </div>
-        <div class="col-6 col-md-3 ">
+        <div class="col-6 col-md-3 member">
     <a   data-toggle="tooltip" data-html="true" title="Rick Hicks has used his Finance expertise at various retailers serving as Director, Controller, VP, and CFO.">
         RICK HICKS &nbsp; &nbsp;<i class="fa fa-info fa-lg"></i>
     </a>
@@ -176,13 +176,15 @@ container section" id="about">
             <div class="form-group row">
                 <label for="name" class="col-sm-2 col-form-label" >Name</label>
                 <div class="col-sm-10">
-                    <input class="form-control" id="name" placeholder="Name">
+                    <input id="name" class="form-control" id="name" placeholder="Name">
+                    <div class="form-control-feedback"></div>
                 </div>
             </div>
             <div class="form-group row">
-            <label for="email" class="col-sm-2 col-form-label">Password</label>
+            <label for="email" class="col-sm-2 col-form-label">Email</label>
             <div class="col-sm-10">
-                <input type="email" class="form-control" id="email" placeholder="Email">
+                <input id="email" type="email" class="form-control" id="email" placeholder="Email">
+                <div class="form-control-feedback"></div>
             </div>
         </div>
 
@@ -190,6 +192,7 @@ container section" id="about">
 
                 <label for="message" class="col-sm-2 col-form-label">Message</label>
                 <textarea class="form-control" id="message" rows="3"></textarea>
+                <div class="form-control-feedback"></div>
             </div>
             <div class="form-group row">
 
@@ -199,17 +202,29 @@ container section" id="about">
 
         </form>
 
-        <div class="row center2 black"><i class="fa fa-location-arrow fa-lg blue"></i>  Huntsville, AL</div>
-        <div class="row center2 black"><i class="fa fa-location-arrow fa-lg blue"></i>  Anaheim, CA</div>
-        <div class="row center2 black"><i class="fa fa-location-arrow fa-lg blue"></i>  Columbus, OH</div>
+        <div class="row center2 black"><i class="fa fa-location-arrow fa-lg blue" style="-webkit-text-stroke-width: 1px; -webkit-text-stroke-color: #2196F3; color: transparent;"></i>&nbsp;&nbsp;  Huntsville, AL</div>
+        <div class="row center2 black"><i class="fa fa-location-arrow fa-lg blue" style="-webkit-text-stroke-width: 1px; -webkit-text-stroke-color: #2196F3; color: transparent;"></i>&nbsp;&nbsp;  Anaheim, CA</div>
+        <div class="row center2 black"><i class="fa fa-location-arrow fa-lg blue" style="-webkit-text-stroke-width: 1px; -webkit-text-stroke-color: #2196F3; color: transparent;"></i>&nbsp;&nbsp;  Columbus, OH</div>
     </div>
 
 </div>
-<footer  class="footer" style="background-color: black; color: white; margin-top: 2em">
-    <div class="container">
-        <p> <div id="date"></div> </p>
+<footer class="footer"   style="background-color: black; color: white; margin-top: 2em; bottom: 0; ">
+        <div class="container">
+
     </div>
 </footer>
+
+
+<div class="navbar navbar-default navbar-fixed-bottom" style="background-color: black; color: white">
+    <div class="container">
+        <div class="navbar-text pull-left">
+        <p> <div id="date"></div> </p>
+        </div>
+
+        <div  class=" pull-right">
+            <i class="fa fa-envelope fa-md blue" style="-webkit-text-stroke-width: 1px; -webkit-text-stroke-color: #e7e7e7; color: transparent;"></i> information@cyberneticretail.com <br/><i class="fa fa-envelope fa-md blue" style="-webkit-text-stroke-width: 1px; -webkit-text-stroke-color: #e7e7e7; color: transparent;"></i> careers@cyberneticretail.com <br/><i class="fa fa-envelope fa-md blue" style="-webkit-text-stroke-width: 1px; -webkit-text-stroke-color: #e7e7e7; color: transparent;"></i>  support@cyberneticretail.com</div>
+    </div>
+</div>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
 <script src="js/bootstrap.js"></script>
@@ -239,6 +254,44 @@ $(function () {
         $('.navbar-collapse').removeClass( "show" );
     })
 
+    $('#message').blur(function () {
+        if($(this).val() === "") {
+            $(this).parent().addClass("has-danger")
+            $(this).parent().removeClass("has-success")
+            $(this).next(".form-control-feedback").html("Please enter a message!")
+        }
+        else{
+            $(this).parent().addClass("has-success")
+            $(this).parent().removeClass("has-danger")
+            $(this).next(".form-control-feedback").html("");
+        }
+    });
+
+    $('#name').blur(function () {
+        if($(this).val() === "") {
+            $(this).parent().addClass("has-danger")
+            $(this).parent().removeClass("has-success")
+            $(this).next(".form-control-feedback").html("Please enter a valid name!")
+        }
+        else{
+            $(this).parent().addClass("has-success")
+            $(this).parent().removeClass("has-danger")
+            $(this).next(".form-control-feedback").html("");
+        }
+    })
+
+    $('#email').blur(function () {
+        if($(this).val() === "") {
+            $(this).parent().addClass("has-danger")
+            $(this).parent().removeClass("has-success")
+            $(this).next(".form-control-feedback").html("Please enter a valid email!")
+        }
+        else{
+            $(this).parent().addClass("has-success")
+            $(this).parent().removeClass("has-danger")
+            $(this).next(".form-control-feedback").html("");
+        }
+    })
 </script>
 </body>
 </html>
