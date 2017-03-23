@@ -14,7 +14,7 @@ body nav{
     -webkit-background-size: auto;
     -moz-background-size: auto;
     -o-background-size: auto;
-    background-size: auto;
+    background-size: contain;
     margin-top: 1em ;
     margin-bottom: 2em !important;
     display: flex;
