@@ -59,7 +59,7 @@ h1,h2,h3,h4,h5{
 
 
 .trans-bg span{
-    color: #2196F3 !important;
+    color: transparent !important;
 }
 
 .member{
@@ -67,7 +67,7 @@ h1,h2,h3,h4,h5{
 }
 
 .blue-bg{
-    background-color: #2196F3 !important;
+    background-color: black !important;
 }
 
 .center{
