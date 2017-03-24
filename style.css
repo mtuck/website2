@@ -286,8 +286,8 @@ b{
 }
 
 .headbold{
-    background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 1%, rgba(0, 255, 255, 1) 50%, rgba(0, 0, 0, 0) 100%),
-    linear-gradient(to left, rgba(0, 0, 0, 0) 1%, rgba(0, 255, 255, 1) 50%, rgba(0, 0, 0, 0) 100%);
+    background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 1%, rgb(189, 29, 42) 50%, rgba(0, 0, 0, 0) 100%),
+    linear-gradient(to left, rgba(0, 0, 0, 0) 1%, rgb(189, 29, 42) 50%, rgba(0, 0, 0, 0) 100%);
     background-size: 100% 3px;
     background-position: 0% 0%, 0% 100%;
     background-repeat: no-repeat;
