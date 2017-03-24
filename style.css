@@ -42,7 +42,7 @@ h1,h2,h3,h4,h5{
     margin-bottom: 2em;
     width: 100vw;
     z-index: -10;
-    background: url("img/p1.jpg"); /* Old browsers */
+    background: url("img/P4.jpg"); /* Old browsers */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -283,6 +283,10 @@ b{
     background-position: 0 0, 100% 0;
     background-repeat: no-repeat;
     padding: 30px;
+}
+
+#learnMore:hover{
+    background-color: #BD1D2A;
 }
 
 .headbold{
