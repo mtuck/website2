@@ -118,7 +118,7 @@ h2{
     /* The image used */
 
     /* Set a specific height */
-    height: 300px;
+    height: 370px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -134,11 +134,11 @@ h2{
 
 
 .p1{
-    background-image: url(img/p1.jpg);
+    background-image: url(img/p7.jpg);
 }
 
 .p2{
-    background-image: url(img/p2.jpg);
+    background-image: url(img/p5.jpg);
 }
 
 .p3{
@@ -148,7 +148,7 @@ h2{
 
 }
 .p5{
-
+background-image:  url(img/p6.jpg);
 }
 
 .center br{
@@ -204,9 +204,9 @@ h2{
 .parallax div h1{
     color: white;
     font-style: italic;
-    font-family: 'Libre Baskerville', serif;
-    font-weight: 900;
-    font-size: 4em;
+    font-family: 'Playfair Display', serif;  /*'Libre Baskerville' */
+    font-weight: 800;
+    font-size: 3em;
 
 }
 b{
@@ -217,11 +217,17 @@ b{
 .headbold h1{
     color: white;
     font-style: italic;
-    font-family: 'Libre Baskerville', serif;
-    font-weight: 900;
+    font-family: 'Playfair Display', serif;
+    font-weight: 800;
     font-size: 4em;
 }
 
+.footfont{
+	color:white; 
+	font-style:italic;
+	font-family:'Playfair Display', serif;
+	font-size:2em;
+}
 
 .boxy {
     border-top: 3px solid #2196F3;
@@ -326,3 +332,57 @@ b{
 
 
 }
+  .w3-opacity-min{opacity:0.97;-webkit-backface-visibility:hidden}
+  
+  .clearfix{
+	  display:hidden
+	  content: ".";
+  }
+  
+  
+ 
+
+
+ /* Creating Slideshow CSS 3.29.17 */
+
+
+  .slide1, .slide2, .slide3 {
+    min-height: 560px;
+    background-size: cover;
+    background-position: center center;
+}
+.slide1 {
+    background-image:  url("./img/P4.jpg");
+}
+.slide2 {
+    background-image: url("./img/P8.jpg");
+}
+.slide3 {
+    background-image: url(http://placekitten.com/1200/300);
+}
+/* Carousel Fade Effect */
+.carousel.carousel-fade .item {
+    -webkit-transition: opacity 1s linear;
+    -moz-transition: opacity 1s linear;
+    -ms-transition: opacity 1s linear;
+    -o-transition: opacity 1s linear;
+    transition: opacity 1s linear;
+    opacity: .5;
+}
+.carousel.carousel-fade .active.item {
+    opacity: 1;
+}
+.carousel.carousel-fade .active.left,
+.carousel.carousel-fade .active.right {
+    left: 0;
+    z-index: 2;
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+.carousel-overlay {
+    position: absolute;
+    bottom: 100px;
+    right: 0;
+    left: 0;
+}
+
