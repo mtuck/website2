@@ -109,8 +109,8 @@ h2{
 
 }
 .section{
-    min-height: 400px;
-    margin-bottom: 4em;
+    min-height: 250px;
+    margin-bottom: 2em;
 }
 
 
@@ -149,6 +149,15 @@ h2{
 }
 .p5{
 background-image:  url(img/p6.jpg);
+}
+
+.p6{
+    background-image:  url(img/p6.jpg);
+	background-size: 850px;
+	background-repeat: no-repeat;
+	align-items:center;
+	justify-content:center;
+	
 }
 
 .center br{
@@ -338,6 +347,7 @@ b{
 	  display:hidden
 	  content: ".";
   }
+  
   
   
  
