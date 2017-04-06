@@ -18,7 +18,7 @@
                         <!--Top nav-->
 <nav class="navbar fixed-top navbar-toggleable-md navbar-dark navbar-inverse bg-faded " style="background-color: black;">
 
-    <div class="navbar-brand"style="padding:4px; padding-bottom:11px"><img style="max-height: 55px; margin-top: 6px;" src="./img/logo 2.png" class="img-fluid" > </div>
+    <div class="navbar-brand col-6 col-md-3"style="padding:4px; padding-bottom:11px"><img style="max-height: 55px; margin-top: 6px;" class="img-fluid" src="./img/logo 2.png" class="img-fluid" > </div>
     <button class="navbar-toggler navbar-toggler-right blue-bg" type="button" style=" margin-top: 1em" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span style="color: yellow" class="navbar-toggler-icon"></span>
     </button>
@@ -29,13 +29,14 @@
             <li class="nav-item">
             <a class="nav-link page-scroll" href="#"> HOME <span class="sr-only">(current)</span></a>
         </li>
+            <li class="nav-item ">
+                <a class="nav-link page-scroll" href="#clients"> CLIENTS</a>
+            </li>
             <li class="nav-item">
                 <a class="nav-link page-scroll" href="#about"> ABOUT US</a>
             </li>
 
-            <li class="nav-item ">
-                <a class="nav-link page-scroll" href="#clients"> CLIENTS</a>
-            </li>
+
 
             <li class="nav-item ">
                 <a class="nav-link page-scroll" href="#services"> SERVICES</a>
@@ -71,7 +72,8 @@
 
     <!--clients -->
 <div id="clients" class="container section">
-    <div class="center" style="margin-bottom: 4em">
+    <div class="row"> </div>
+    <div class="center" style="margin-top: 5.5em; margin-bottom: 4em">
         <b style="font-weight:600">Add your name to the list</b>
         <h1 class="center">Clients</h1>
 
@@ -89,12 +91,12 @@
     <!--About us -->
 <div class="parallax p2"><div class="center2"><div class="boxy"> <h1>About Us</h1></div></div></div>
 <div class="container section content" id="about">
-    <div class="row">
+    <div class="row" style="margin-top: 4em">
         <div class="col-md-6 right"><b style="font-weight:600">Introducing Cybernetic Retail</b><h2 style="font-size:2.5rem; font-weight:700">About Us</h2></div>
         <div class="col-md-6 left "> To be successful you must adapt and change with the times. At Cybernetic Retail, we provide experience and expertise across all aspects of the retail environment, from conducting strategic assessments, to providing sustainable optimization plans and implementing new technologies to grow your business. 
             <!-- space in button. change when figure out differnt way to add space-->
         <div> <p> </p></div>
-            <br/><button class="btn btn-outline-primary" style="border-width: 3px; ">Learn More</button>
+            <br/><button class="btn btn-outline-primary" style="border-width: 3px; "><a href="#contact">Learn More</a></button>
         </div>
     </div>
 
@@ -103,13 +105,13 @@
      <!--Services-->
 
 <div class="container-fluid parallax p1"><div class="center2"><div class="boxy-yellow"> <h1 class="">SERVICES</h1></div></div> </div>
-<div class="container section content" id="services">
-    <div class="row">
+<div class="container section content" id="services" style="margin-top: 7em">
+    <div class="row" style="margin-top: 3em">
         <div class="col-md-6 right"><b style="font-weight:600">We're all about retail</b><h2 style="font-size:2.5rem;font-weight:700">Services</h2></div>
         <div class="col-md-6 left"><p style="padding-bottom:25px;"> Cybernetic Retail consultants bring key business, operations, and IT expertise to the table to help companies make the best decisions possible about the future of their company. Our goals have always been to create the perfect solutions for efficiency, profit, employee satisfaction, and customer satisfaction. We help your company achieve this by offering a wide range of services in the retail marketplace.</p>
             <!-- space in button. change when figure out differnt way to add space-->
             
-            <br/><button class="btn btn-outline-warning" style="border-width: 3px">Learn More</button>
+            <br/><button class="btn btn-outline-warning" style="border-width: 3px"><a href="#contact">Learn More</a></button>
         </div>
     </div>
 
@@ -122,11 +124,11 @@
     <!--change margin later if needed-->
     <!--img container-->
     <div id="contact" class="container center2" style="margin-top: 2em; margin-bottom: 2em">
-    
 
-          <div id="c1" class="col-lg-4 center2"><div class="boxy-green"> <h4><a>Support</a></h4></div></div>
-          <div id="c2"  class="col-lg-4 center2"><div class="boxy-yellow"> <h4><a>Careers</h4></a></div></div>
-          <div id="c3"  class="col-lg-4 center2"><div class="boxy"> <h4><a>Information</h4></a></div></div>
+
+         <div id="c1" class="col-lg-4 center2"><div class="boxy-green"> <h4><a href="mailto:someone@example.com?Subject=Hello%20again" >Support</a></h4></div></div>
+     <div id="c2"  class="col-lg-4 center2"><div class="boxy-yellow"> <h4><a href="mailto:someone@example.com?Subject=Hello%20again" >Careers</a></h4></div></div>
+     <div id="c3"  class="col-lg-4 center2"><div class="boxy"> <h4><a href="mailto:someone@example.com?Subject=Hello%20again" >Information</a></h4></div></div>
 
         
     </div>
@@ -145,26 +147,19 @@
 </footer>
 
 
-<div class="navbar navbar-default navbar-fixed-bottom" style="background-color:#0b141e ; color: white">
-    <div class="container"style="height:700px; width:620px;padding-top:80px;">
-        
-        <div class="col-md-12 center">
-            <h1 class="footfont center"style="font-size:25px;line-height:55px; text-transform:none"> "Ennie Minnie Miney Moe. Catch<span>a tiger by it's toe"</span> </h1>
-                <div style="height:50px"> </div>
-            <span style="font-size:15px;font-weight:700;letter-spacing:8px"> UNKNOWN</span>
-                <div style="height:150px"> </div>
-            
-           <b class="center"style="font-weight:800;line-height:25px;padding-bottom:60px"> COME OVER. LET’S HAVE COFFEE & <span>DISCUSS YOUR BUSINESS</span> </b>
-            <br/><button class="btn btn-outline-warning" style="border-width: 3px">Learn More</button>
+<footer class="text-center">
 
+    <div class="footer-below">
+        <div class="container">
+            <div class="row">
+
+                <div class="col-lg-12">
+                    Copyright &copy; Cybernetic Retail 2017
+                </div>
+            </div>
         </div>
- <div>
-     <span style="border:solid;border-color:white">kaf;j;aja;</span>
- </div>
-
-
-</div>
- </div>
+    </div>
+</footer>
 
         <!--script-->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
