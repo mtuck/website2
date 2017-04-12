@@ -25,7 +25,7 @@ h1,h2,h3,h4,h5{
     -o-background-size: auto;
     background-size: contain;
     margin-top: 1em ;
-    margin-bottom: 2em !important;
+    margin-bottom: 2em ;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -159,6 +159,13 @@ background-image:  url(img/p6.jpg);
 	justify-content:center;
 	
 }
+
+.sm-p-sze {
+height: 105px;
+width:105px;
+
+}
+
 
 .center br{
     width: 100vw;
@@ -395,4 +402,63 @@ b{
     right: 0;
     left: 0;
 }
+
+/* 4.11.17  making smaller nav bar*/
+
+
+	
+	
+@media all and (min-width:984px){
+
+
+.navbar-default.shrink {
+  min-height: 50px;
+  height: 50px;
+  
+
+} 
+
+
+
+
+
+/*first way */
+nav.navbar.shrink {
+  min-height: 50px;
+  height: 50px;
+  
+
+}
+
+
+
+  
+nav.shrink a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 10px;
+  
+}
+
+nav.shrink img{
+max-height:50px;
+margin-top:3px;
+padding:5px
+
+ }
+
+}
+
+
+.fade {
+   opacity: 1;
+   transition: opacity .1s ease;
+   -moz-transition: opacity .1s ease;
+   -webkit-transition: opacity .1s ease;
+    animation-iteration-count: 3;
+}
+   }
+
+
+
 
