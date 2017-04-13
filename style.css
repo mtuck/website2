@@ -459,6 +459,13 @@ padding:5px
 }
    }
 
+   
+   .hl-image:hover{
+   transition: .5s ease;
+  background-color: white
+  ;
+}
+   }
 
 
 
