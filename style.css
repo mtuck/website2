@@ -25,7 +25,7 @@ h1,h2,h3,h4,h5{
     -o-background-size: auto;
     background-size: contain;
     margin-top: 1em ;
-    margin-bottom: 2em !important;
+    margin-bottom: 2em ;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -90,50 +90,11 @@ h1,h2,h3,h4,h5{
 
 }
 
-#clients{
-    margin-top: 5em;
-}
-
-#c1{
-    background-image: url(img/support.jpg);
-    background-size: 100%;
-    height: 300px;
-    background-repeat: no-repeat;
-    align-items: center;
-    justify-content: center;
-}
-#c2{ background-image: url(img/careers.jpg);
-    background-size: 100%;
-    height: 300px;
-    background-repeat: no-repeat;
-    align-items: center;
-    justify-content: center;
-}
-#c3{background-image: url(img/information.jpg);
-    background-size: 100%;
-    height: 300px;
-    background-repeat: no-repeat;
-    align-items: center;
-    justify-content: center;
-}
-
-#c1 div h4:hover, #c2 div h4:hover, #c3 div h4:hover{
-    color: lightgray;
-    cursor: pointer; cursor: hand;
-}
-
-
 .black{
     color: black !important;
 }
 
-#contact div div h4{
-    color: white;
-    font-style: italic;
-    font-family: 'Playfair Display', serif;  /*'Libre Baskerville' */
-    font-weight: 800;
 
-}
 h3{
     margin-top: 4em;
     margin-bottom: 1em;
@@ -148,8 +109,8 @@ h2{
 
 }
 .section{
-    min-height: 400px;
-    margin-bottom: 4em;
+    min-height: 250px;
+    margin-bottom: 2em;
 }
 
 
@@ -168,25 +129,16 @@ h2{
 
 }
 
-h4 a{
-    color: white;
-}
 
 
-.text-center{
-    display: flex;
-    align-content: center;
-    justify-content: center;
-    background-color: black;
-    color: white;
-    text-align: center;
-}
+
+
 .p1{
-    background-image: url(img/services.jpg);
+    background-image: url(img/p7.jpg);
 }
 
 .p2{
-    background-image: url(img/p2.jpg);
+    background-image: url(img/p5.jpg);
 }
 
 .p3{
@@ -196,8 +148,24 @@ h4 a{
 
 }
 .p5{
-background-image:  url(img/contact.jpg);
+background-image:  url(img/p6.jpg);
 }
+
+.p6{
+    background-image:  url(img/p6.jpg);
+	background-size: 850px;
+	background-repeat: no-repeat;
+	align-items:center;
+	justify-content:center;
+	
+}
+
+.sm-p-sze {
+height: 105px;
+width:105px;
+
+}
+
 
 .center br{
     width: 100vw;
@@ -383,9 +351,10 @@ b{
   .w3-opacity-min{opacity:0.97;-webkit-backface-visibility:hidden}
   
   .clearfix{
-	  display:hidden;
+	  display:hidden
 	  content: ".";
   }
+  
   
   
  
@@ -433,4 +402,63 @@ b{
     right: 0;
     left: 0;
 }
+
+/* 4.11.17  making smaller nav bar*/
+
+
+	
+	
+@media all and (min-width:984px){
+
+
+.navbar-default.shrink {
+  min-height: 50px;
+  height: 50px;
+  
+
+} 
+
+
+
+
+
+/*first way */
+nav.navbar.shrink {
+  min-height: 50px;
+  height: 50px;
+  
+
+}
+
+
+
+  
+nav.shrink a {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-size: 10px;
+  
+}
+
+nav.shrink img{
+max-height:50px;
+margin-top:3px;
+padding:5px
+
+ }
+
+}
+
+
+.fade {
+   opacity: 1;
+   transition: opacity .1s ease;
+   -moz-transition: opacity .1s ease;
+   -webkit-transition: opacity .1s ease;
+    animation-iteration-count: 3;
+}
+   }
+
+
+
 
