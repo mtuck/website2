@@ -25,7 +25,7 @@ h1,h2,h3,h4,h5{
     -o-background-size: auto;
     background-size: contain;
     margin-top: 1em ;
-    margin-bottom: 2em ;
+    margin-bottom: 2em !important;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -159,13 +159,6 @@ background-image:  url(img/p6.jpg);
 	justify-content:center;
 	
 }
-
-.sm-p-sze {
-height: 105px;
-width:105px;
-
-}
-
 
 .center br{
     width: 100vw;
@@ -403,6 +396,7 @@ b{
     left: 0;
 }
 
+<<<<<<< HEAD
 /* 4.11.17  making smaller nav bar*/
 
 
@@ -469,3 +463,5 @@ padding:5px
 
 
 
+=======
+>>>>>>> parent of 6e59006... 4.12.2017
