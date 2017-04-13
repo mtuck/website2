@@ -73,7 +73,7 @@
 <div id="clients" class="container section">
     <div class="center" style="margin-bottom: 2em">
         <b style="font-weight:600">Add your name to the list</b>
-<<<<<<< HEAD
+
         <h1 class="center" style="margin-bottom:14px">Clients</h1>
 </div>
 
@@ -98,9 +98,9 @@
         <div class="col-6 col-md-2"><img src="img/svg/fragrance-outlet.svg" class="img-fluid"style="max-width:120%"> </div>
         <div class="col-6 col-md-2"><img src="img/svg/true religion.svg" class="img-fluid"style="max-width:180%;height:150px; padding-right:60px"> </div>
 
-=======
-        <h1 class="center">Clients</h1>
->>>>>>> parent of 6e59006... 4.12.2017
+
+      
+
 
     </div>
     <div class="row">
@@ -289,5 +289,20 @@ $(function () {
         });
     });
 </script>
+    <!--4.11.17 Trying to make nav bar smaller when scrolling-->
+    <script>
+
+
+    $(window).scroll(function () {
+        if ($(document).scrollTop() > 40) {
+            $('nav').addClass('shrink');
+        } else {
+            $('nav').removeClass('shrink');
+        }
+    });
+
+
+    </script>
+
 </body>
 </html>
