@@ -350,11 +350,7 @@ b{
 }
   .w3-opacity-min{opacity:0.97;-webkit-backface-visibility:hidden}
   
-  .clearfix{
-	  display:hidden
-	  content: ".";
-  }
-  
+
   
   
  
@@ -456,8 +452,7 @@ padding:5px
    -moz-transition: opacity .1s ease;
    -webkit-transition: opacity .1s ease;
     animation-iteration-count: 3;
-}
-   }
+}  
 
 
 
