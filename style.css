@@ -428,14 +428,12 @@ p{
 @media all and (min-width:984px){
 
 
-.navbar-default.shrink {
-  min-height: 50px;
-  height: 50px;
-  
 
-} 
-
-
+    nav.navbar{
+    height: 100px;
+    -webkit-transition: height 2s; /* For Safari 3.1 to 6.0 */
+    transition: height 2s;
+}
 
 
 
@@ -443,7 +441,9 @@ p{
 nav.navbar.shrink {
   min-height: 50px;
   height: 50px;
-  
+
+
+
 
 }
 
