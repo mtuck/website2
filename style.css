@@ -430,9 +430,9 @@ p{
 
 
     nav.navbar{
-    height: 100px;
-    -webkit-transition: height 2s; /* For Safari 3.1 to 6.0 */
-    transition: height 2s;
+    height: 80px;
+    -webkit-transition: height 0.5s; /* For Safari 3.1 to 6.0 */
+    transition: height 0.5s;
 }
 
 
@@ -448,6 +448,15 @@ nav.navbar.shrink {
 }
 
 
+.brand-wrap{
+    background-color: gray;
+}
+
+.brand-wrap:hover{
+    background-color: white;
+}
+
+
 
   
 nav.shrink a {
@@ -459,8 +468,9 @@ nav.shrink a {
 
 nav.shrink img{
 max-height:50px;
-margin-top:3px;
-padding:5px
+
+
+
 
  }
 
