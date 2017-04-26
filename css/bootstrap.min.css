@@ -2623,7 +2623,9 @@ tbody.collapse.show {
   position: relative;
   display: flex;
   flex-direction: column;
-  padding: 0.5rem 1rem; }
+  padding: 0.5rem 1rem;
+  
+  }
 
 .navbar-brand {
   display: inline-block;
@@ -2632,7 +2634,8 @@ tbody.collapse.show {
   margin-right: 1rem;
   font-size: 1.25rem;
   line-height: inherit;
-  white-space: nowrap; }
+  white-space: nowrap;
+  }
   .navbar-brand:focus, .navbar-brand:hover {
     text-decoration: none; }
 
@@ -2641,7 +2644,9 @@ tbody.collapse.show {
   flex-direction: column;
   padding-left: 0;
   margin-bottom: 0;
-  list-style: none; }
+  list-style: none; 
+ 
+  }
   .navbar-nav .nav-link {
     padding-right: 0;
     padding-left: 0; }
@@ -2649,7 +2654,9 @@ tbody.collapse.show {
 .navbar-text {
   display: inline-block;
   padding-top: .425rem;
-  padding-bottom: .425rem; }
+  padding-bottom: .425rem; 
+  
+  }
 
 .navbar-toggler {
   align-self: flex-start;

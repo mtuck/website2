@@ -10,6 +10,7 @@ body{
 h1,h2,h3,h4,h5{
     color: #474747;
     text-transform: uppercase;
+
 }
 
 
@@ -25,7 +26,7 @@ h1,h2,h3,h4,h5{
     -o-background-size: auto;
     background-size: contain;
     margin-top: 1em ;
-    margin-bottom: 2em !important;
+    margin-bottom: 2em ;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -104,6 +105,11 @@ h2{
     margin-bottom: 1em;
 }
 
+h2{
+    font-size: 1.7rem !important;
+    font-weight: 900;
+}
+
 .section > .center h1 {
     margin-bottom: 2em;
 
@@ -138,7 +144,7 @@ h2{
 }
 
 .p2{
-    background-image: url(img/p25.jpg);
+    background-image: url(img/p7.jpg);
 }
 
 .p3{
@@ -148,7 +154,7 @@ h2{
 
 }
 .p5{
-background-image:  url(img/p6.jpg);
+background-image:  url(img/p20.jpg);
 }
 
 .p6{
@@ -159,6 +165,13 @@ background-image:  url(img/p6.jpg);
 	justify-content:center;
 	
 }
+
+.sm-p-sze {
+height: 105px;
+width:105px;
+
+}
+
 
 .center br{
     width: 100vw;
@@ -239,7 +252,7 @@ b{
 }
 
 .boxy {
-    border-top: 3px solid #2196F3;
+    border-top: 2px solid #2196F3;
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#2196F3), to(transparent));
     background-image: -webkit-linear-gradient(#2196F3, transparent);
     background-image:
@@ -251,15 +264,15 @@ b{
     background-image:
             linear-gradient(#2196F3, transparent),
             linear-gradient(#2196F3, transparent);
-    -moz-background-size: 3px 100%;
-    background-size: 3px 100%;
+    -moz-background-size: 2px 100%;
+    background-size: 2px 100%;
     background-position: 0 0, 100% 0;
     background-repeat: no-repeat;
     padding: 30px;
 }
 
 .boxy-green{
-    border-top: 3px solid #5cb85c;
+    border-top: 2px solid #5cb85c;
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#5cb85c), to(transparent));
     background-image: -webkit-linear-gradient(#5cb85c, transparent);
     background-image:
@@ -271,17 +284,25 @@ b{
     background-image:
             linear-gradient(#5cb85c, transparent),
             linear-gradient(#5cb85c, transparent);
-    -moz-background-size: 3px 100%;
-    background-size: 3px 100%;
+    -moz-background-size: 2px 100%;
+    background-size: 2px 100%;
     background-position: 0 0, 100% 0;
     background-repeat: no-repeat;
     padding: 30px;
 }
 
 
+ .btn-outline-primary,  .btn-outline-secondary, .btn-outline-warning, .btn-outline-danger, .btn-outline-success{
+    border-width: 2px !important;
+}
+
+ .btn b{
+     font-size: .75em !important;
+ }
+
 
 .boxy-yellow{
-    border-top: 3px solid #f0ad4e;
+    border-top: 2px solid #f0ad4e;
     background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#f0ad4e), to(transparent));
     background-image: -webkit-linear-gradient(#f0ad4e, transparent);
     background-image:
@@ -293,11 +314,18 @@ b{
     background-image:
             linear-gradient(#f0ad4e, transparent),
             linear-gradient(#f0ad4e, transparent);
-    -moz-background-size: 3px 100%;
-    background-size: 3px 100%;
+    -moz-background-size: 2px 100%;
+    background-size: 2px 100%;
     background-position: 0 0, 100% 0;
     background-repeat: no-repeat;
     padding: 30px;
+}
+
+p{
+    font-size: .9em;
+    line-height: 2.3em;
+    font-weight: 100;
+    color: #727272 !important;
 }
 
 #learnMore:hover{
@@ -307,7 +335,7 @@ b{
 .headbold{
     background-image: linear-gradient(to left, rgba(0, 0, 0, 0) 1%, rgb(189, 29, 42) 50%, rgba(0, 0, 0, 0) 100%),
     linear-gradient(to left, rgba(0, 0, 0, 0) 1%, rgb(189, 29, 42) 50%, rgba(0, 0, 0, 0) 100%);
-    background-size: 100% 3px;
+    background-size: 100% 2px;
     background-position: 0% 0%, 0% 100%;
     background-repeat: no-repeat;
 
@@ -329,7 +357,7 @@ b{
 
 @media (max-width: 900px) {
     h1{
-        font-size: 2.0em !important;
+        font-size: 1.0em !important;
 
     }
 
@@ -343,11 +371,7 @@ b{
 }
   .w3-opacity-min{opacity:0.97;-webkit-backface-visibility:hidden}
   
-  .clearfix{
-	  display:hidden
-	  content: ".";
-  }
-  
+
   
   
  
@@ -396,21 +420,20 @@ b{
     left: 0;
 }
 
-
 /* 4.11.17  making smaller nav bar*/
 
+
+	
+	
 @media all and (min-width:984px){
 
 
-nav.navbar{
-  
-  height: 78px;
-  transition: 0.3s;
-  
 
-} 
-
-
+    nav.navbar{
+    height: 80px;
+    -webkit-transition: height 0.5s; /* For Safari 3.1 to 6.0 */
+    transition: height 0.5s;
+}
 
 
 
@@ -418,9 +441,19 @@ nav.navbar{
 nav.navbar.shrink {
   min-height: 50px;
   height: 50px;
- 
-  
 
+
+
+
+}
+
+
+.brand-wrap{
+    background-color: gray;
+}
+
+.brand-wrap:hover{
+    background-color: white;
 }
 
 
@@ -435,17 +468,14 @@ nav.shrink a {
 
 nav.shrink img{
 max-height:50px;
-margin-top:3px;
-padding:5px
+height: 45px;
+
+
+
 
  }
 
 }
-
-
-	
-	
-
 
 
 .fade {
@@ -455,17 +485,7 @@ padding:5px
    -webkit-transition: opacity .1s ease;
     animation-iteration-count: 3;
 }
-   }
-
-   
-   .hl-image:hover{
-   transition: .5s ease;
-  background-color: white
-  ;
-}
-   }
 
 
 
-=======
->>>>>>> parent of 6e59006... 4.12.2017
+
