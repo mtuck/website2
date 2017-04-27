@@ -443,9 +443,8 @@ nav.navbar.shrink {
   height: 50px;
 
 
-
-
 }
+
 
 
 .brand-wrap{
@@ -484,6 +483,12 @@ height: 45px;
    -moz-transition: opacity .1s ease;
    -webkit-transition: opacity .1s ease;
     animation-iteration-count: 3;
+}
+
+.fade div .img-fluid {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: -3em !important;
 }
 
 
