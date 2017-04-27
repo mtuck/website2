@@ -43,7 +43,7 @@ h1,h2,h3,h4,h5{
     margin-bottom: 2em;
     width: 100vw;
     z-index: -10;
-    background: url("img/P4.jpg"); /* Old browsers */
+    background: url("img/P4 (1).jpg"); /* Old browsers */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -124,7 +124,7 @@ h2{
     /* The image used */
 
     /* Set a specific height */
-    height: 370px;
+    height: 385px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -486,7 +486,7 @@ height: 45px;
 }
 
 .cleint-imgs div{
-    height: 75px;
+    height: 80px;
 }
 .cleint-imgs div .img-fluid{
     height: 100%;
