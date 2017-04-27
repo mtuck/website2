@@ -485,10 +485,12 @@ height: 45px;
     animation-iteration-count: 3;
 }
 
-.fade div .img-fluid {
-    max-width: 100%;
-    height: auto;
-    margin-bottom: -3em !important;
+.cleint-imgs div{
+    height: 100px;
+}
+.cleint-imgs div .img-fluid{
+    height: 100%;
+    width: auto;
 }
 
 
