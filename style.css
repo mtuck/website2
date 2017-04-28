@@ -43,7 +43,7 @@ h1,h2,h3,h4,h5{
     margin-bottom: 2em;
     width: 100vw;
     z-index: -10;
-    background: url("img/P4.jpg"); /* Old browsers */
+    background: url("img/P4 (1).jpg"); /* Old browsers */
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -124,7 +124,7 @@ h2{
     /* The image used */
 
     /* Set a specific height */
-    height: 370px;
+    height: 385px;
 
     /* Create the parallax scrolling effect */
     background-attachment: fixed;
@@ -144,7 +144,7 @@ h2{
 }
 
 .p2{
-    background-image: url(img/p5.jpg);
+    background-image: url(img/p7.jpg);
 }
 
 .p3{
@@ -154,7 +154,7 @@ h2{
 
 }
 .p5{
-background-image:  url(img/p6.jpg);
+background-image:  url(img/p20.jpg);
 }
 
 .p6{
@@ -443,9 +443,8 @@ nav.navbar.shrink {
   height: 50px;
 
 
-
-
 }
+
 
 
 .brand-wrap{
@@ -468,6 +467,7 @@ nav.shrink a {
 
 nav.shrink img{
 max-height:50px;
+height: 45px;
 
 
 
@@ -483,6 +483,14 @@ max-height:50px;
    -moz-transition: opacity .1s ease;
    -webkit-transition: opacity .1s ease;
     animation-iteration-count: 3;
+}
+
+.cleint-imgs div{
+    height: 80px;
+}
+.cleint-imgs div .img-fluid{
+    height: 100%;
+    width: auto;
 }
 
 
